@@ -1,0 +1,1 @@
+# AWS_Dynamo_lambda_Snowflake_Pipeline
