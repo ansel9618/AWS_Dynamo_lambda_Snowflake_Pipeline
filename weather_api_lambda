@@ -1,0 +1,20 @@
+from datetime import datetime
+import requests  
+import boto3
+from decimal import Decimal
+
+# dynamodb = boto3.resource('dynamodb')
+# table = dynamodb.Table("weather")
+
+def get_weather_data(city):  
+    api_url = "http://api.weatherapi.com/v1/current.json"
+    params = {  
+        "q": city,    
+        "key": "3807b2ecfb5c4829ae154847242905"
+    }  
+    response = requests.get(api_url, params=params)  
+    data = response.json()  
+    return data 
+
+out = get_weather_data("Kochi")
+print(out)
