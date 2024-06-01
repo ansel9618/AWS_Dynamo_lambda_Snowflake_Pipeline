@@ -2,6 +2,8 @@
 
 Completed a automated pipeline using AWS Eventbridge,lambda,DynamoDB,s3 & snowflake.
 
+![Architecture](https://github.com/ansel9618/AWS_Dynamo_lambda_Snowflake_Pipeline/blob/main/images/aws_dynamo_snowflake_pipeline.png)
+
 In this pipeline:
 
 * First we created a weather api and got the api key
